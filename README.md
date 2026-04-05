@@ -119,7 +119,7 @@ llm_no_think = ChatOpenAIWithReasoning(
 | 백엔드 | HuggingFace 로컬 파이프라인 | vLLM OpenAI-호환 API |
 | thinking 제어 | chat template 직접 호출 | `extra_body`로 서버에 전달 |
 | thinking 출력 | 제거(strip) 또는 포함 선택 | `additional_kwargs`에 분리 보존 |
-| 스트리밍 | 전체 생성 후 yield | 네이티브 스트리밍 |
+| 스트리밍 | strip_thinking=True일 때 전체 생성 후 yield, 아닐 때 네이티브 스트리밍 | 네이티브 스트리밍 |
 
 ## License
 
